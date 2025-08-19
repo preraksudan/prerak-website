@@ -5,6 +5,7 @@ import './App.css'
 import Home from "./Pages/Home";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
+import Gallery from "./components/Gallery";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,12 +18,13 @@ function App() {
 
   return (
     <>
-      <h1>React Vite App</h1>
-      <p>Count: {count}</p>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
+      {/* <h1>React Vite App</h1> */}
+      {/* <p>Count: {count}</p> */}
+      {/* <button onClick={() => setCount(count + 1)}>Increment</button> */}
       <Home/>
-      <Hero />
+      <Hero/>
       <Projects />
+      <Gallery />
     </>
   )
 }
